@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, serif;
+}
+
+/* header styling */
+
+header{
+    height: 100px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    background-color: white;
+    width: 100%;
+}
+#home-button{
+ 
+    padding:20px ;
+    flex: 1 10 2;
+    width: 40%;
+}
+#nav-logo{
+    height: 50px;
+    margin-top: 15px;
+    flex: 10 1 5;
+   
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+
+}
+nav ul li a:hover{
+    color: blue;
+    
+}
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+    background-color: rgb(212, 209, 209);
+}
+nav ul li:hover > ul{
+    display: block;
+}
+@media(min-width:320px) and (max-width:370px) {
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+@media(min-width:0px) and (max-width:320px) {
+    #home{
+        display: none;
+    }
+    #home-button{
+        width: 30%;
+        padding: 10px;
+        align-self: center;
+    }
+}
+@media(min-width:0px) and (max-width:200px) {
+    nav{
+        width: 100%;
+        background-color: white;
+    }
+    #home-button{
+        display: none;
+    }
+    #nav-logo{
+        padding: 0 40px;
+    }
+    nav{
+        box-shadow: 0 0 0;
+    }
+}
+
+/* main styling */
+
+body{
+    background-color: black;
+}
+.heading {
+    color: white;
+    font-weight: bolder;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.desc{
+    color: rgb(235, 233, 233);
+    margin-top: 20px;
+    font-size: 20px;
+}
+.email:hover{
+    color: blue;
+}
+#mainblock{
+    margin: 0px 30px 0px 30px;
+}
+.container2{
+    display: flex;
+   
+    flex-wrap:wrap;
+}
+.cards{
+    width:32.5%;
+    height:370px;
+    box-shadow: -4px -60px 35px 20px rgba(0, 0, 0, 0.5) inset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 5px;
+    font-size: 15px;
+    color: white;
+    
+}
+.card{
+    width:24.2%;
+    height:260px;
+    box-shadow: inset 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 5px;
+    font-size: 15px;
+    color: white;
+    box-shadow: -4px -60px 35px 20px rgba(0, 0, 0, 0.5) inset;
+    
+}
+.card:hover i{
+   color: blue;
+}
+.cards:hover i{
+   color: blue;
+}
+
+.up{
+    font-weight: bold;
+    font-size: 20px;
+}
+.text{
+    position: relative;
+    top: 310px;
+    left: 10px;
+} 
+.text2{
+    position: relative;
+    top: 195px;
+    left: 10px;
+} 
+
+#ben{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04133345/CartoonNetwork_Ben10_462x386.jpg");
+}
+#heroes{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200714/CartoonNetwork_OKKO_462x386.jpg");
+    
+}
+#grey{
+    background-color: rgb(49, 49, 49);
+}
+#universe{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200734/CartoonNetwork_StevenUniverse_462x386.jpg");
+    
+}
+#bears{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04142757/CartoonNetwork_WeBareBears_462x3861.jpg");
+    
+}
+#girls{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200805/CartoonNetwork_ThePowerPuffGirls_462x386.jpg");
+    
+}
+#regular{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200826/CartoonNetwork_TheRegularShow_462x386.jpg");
+    
+}
+#adventure{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200850/CartoonNetwork_AdventureTime_462x386.jpg");
+    
+}
+#apple-onion{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130736/AppleAndOnion.jpg");
+    
+}
+#mao-mao{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130740/MaoMao.jpg");
+    
+}
+#gumball{
+    background-image: url("https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130745/AWOG.jpg");
+}
+@media (min-width:1260px) and (max-width:1310px){
+    .card{
+        width: 32.5%;
+        height: 370px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 5px 5px;
+    }
+    .text2{
+        position: relative;
+        top: 310px;
+        left: 10px;
+    }
+}
+@media (min-width:1170px) and (max-width:1263px){
+    #ben{
+        width: 49.1%;
+        height:450px;
+    }
+    #heroes{
+        width: 49.1%;
+        height:450px;
+    }
+    #up-one{
+        position: relative;
+        top: 400px;
+        left: 10px;
+    }
+    #up-two{
+        position: relative;
+        top: 400px;
+        left: 10px;
+    }
+    #grey{
+        width:24.2%;
+        height:260px;
+    }
+    .cards{
+        margin: 4px;
+    }
+    .card{
+        margin: 4px;
+    }
+}
+@media (min-width:0px) and (max-width:1170px){
+    #grey{
+        display: none;
+    }
+    .cards{        
+        width:462px;
+        height:386px;
+        
+    }
+    .card{        
+        width:462px;
+        height:386px;
+    }
+    .text{
+        position: relative;
+        top: 310px;
+        left: 10px;
+    }
+    .text2{
+        position: relative;
+        top: 310px;
+        left: 10px;
+    } 
+    .container2{
+        flex-direction: column;
+        justify-content: center;
+        width: 1170px;
+        margin: 0px 1em 0px 1em;
+    }
+    #feature{text-align: center;}
+    
+}
+
+/* footer styling */
+
+.foot-one{
+    padding: 50px 10%;
+    background-color: rgb(43, 43, 43);
+}
+.foot-cont1{
+    color: white;
+    display: flex;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.foot-ele{
+    margin: 20px;
+    padding: 20px;
+}
+.foot-cont2{
+    text-align: center;
+    color: rgb(170, 170, 170);
+    margin-top: 30px;
+    font-size: 15px;
+}
+.footheading{
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}
+.footdesc{
+    color: white;
+    text-align: center;
+    margin: 15px;
+    font-size: 13px;
+}
+.foot-two img{
+    height: 180px;
+    width: 180px;
+    size: cover;
+    display: inline-block;
+}
+.foot-cont3{
+    display: flex;
+    justify-content: center;
+    margin: 20px 5%;
+    flex-wrap: wrap;
+}
+#foot-cont4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#foot-cont5{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
